@@ -3,3 +3,20 @@
     padding: 0;
 }
 
+
+
+header {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+}
+.container {
+    display: flex;
+    justify-content: space-between; /* Espaça os itens à esquerda e à direita */
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+.logo {
+    width: 120px; /* Ajuste o tamanho da logo conforme necessário */
+    height: auto;
+}
