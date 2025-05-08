@@ -3,20 +3,37 @@
     padding: 0;
 }
 
-
+@media (max-width: 768px) {
+    h2 {
+      font-size: 1.2rem; /* Tamanho menor para telas pequenas */
+    }
+  
+    .btn-lg {
+      font-size: 0.9rem;
+      padding: 0.4rem 0.8rem;
+    }
+  }
 
 header {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 2em;
     font-weight: bold;
 }
+
+
 .container {
     display: flex;
-    justify-content: space-between; /* Espaça os itens à esquerda e à direita */
+    justify-content: flex-start; /* Espaça os itens à esquerda e à direita */
     align-items: center; /* Alinha os itens verticalmente */
 }
 
 .logo {
-    width: 120px; /* Ajuste o tamanho da logo conforme necessário */
+    width: 250px; /* Ajuste o tamanho da logo conforme necessário */
     height: auto;
 }
+.logo-nome {
+    width: 300px; /* Ajuste o tamanho da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    float: left; /* Faz a imagem flutuar à esquerda */
+}
+
