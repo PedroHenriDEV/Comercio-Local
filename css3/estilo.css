@@ -37,3 +37,18 @@ header {
     float: left; /* Faz a imagem flutuar à esquerda */
 }
 
+/* Em css3/estilo.css */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
