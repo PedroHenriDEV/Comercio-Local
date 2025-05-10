@@ -52,3 +52,19 @@ main {
   flex: 1;
 }
 
+/* ANIMAÇÃO LOGO */
+ .animada {
+      position: relative;
+      right: -800px;
+      opacity: 0;
+      animation: entrar 1.6s linear forwards;
+    }
+
+    @keyframes entrar {
+      to {
+        right: 0;
+        opacity: 1;
+      }
+    }
+    
+    
