@@ -67,4 +67,15 @@ main {
       }
     }
     
-    
+.nav-link.btn {
+  display: inline-flex;
+  align-items: center; /* alinha verticalmente */
+  min-width: 130px; /* define largura mínima fixa, ajuste conforme quiser */
+  justify-content: center; /* centraliza conteúdo */
+}
+
+#contador {
+  margin-left: 8px; /* espaço entre texto e número */
+  color: red;
+  
+}

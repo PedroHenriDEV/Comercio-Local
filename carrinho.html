@@ -8,26 +8,36 @@
     <link rel="stylesheet" type="text/css" href="css3/estilo.css">
     <title>Carrinho</title>
 </head>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css3/estilo.css">
+    <title>Comércio Local</title>
+</head>
 
 <body>
-      <header class=" py-2  position-relative" style="background-color:
-    #005f73;">
+    <header class=" py-2  position-relative" style="background-color:
+    #14532D;">
         <div class="container d-flex flex-wrap justify-content-between  text-white ">
             <div>
                 <img src="imagens/nome.png " alt="Bem vindo ao seu comércio local" class="logo-nome img-fluid">
             </div>
             <div>
-                <img src="imagens/Imagem_do_WhatsApp_de_2025-05-09_à_s__11.40.20_187ed2ee-removebg-preview.png" class="logo img-fluid animada">
+                <img src="imagens/download.png" class="logo img-fluid animada">
             </div>
-            <h2
+            <h2 class="animada"
                 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
                 Sua compra em um <strong><button class="btn btn-dark btn-lg text-white"> &gt;click&lt;</button></strong>
             </h2>
         </div>
     </header>
 
-   <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f8f9fa;">
-        <a class="navbar-brand" ></a>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f8f9fa;">
+        <a class="navbar-brand"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -36,51 +46,78 @@
             <div class="btn-group" role="group" aria-label="Navbar Buttons"></div>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link btn btn-outline-primary " href="index.html">Página Inicial</a>
+                    <a class="nav-link btn btn-outline-success rounded-pill" href="index.html">Página Inicial</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link btn btn-outline-primary active" href="carrinho.html">Carrinho</a>
+                    <a class="nav-link btn btn-outline-success rounded-pill active " href="carrinho.html"> Carrinho
+                        <span id="contador" style="color: red;">0</span>
+                    </a>
                 </li>
+
+
             </ul>
         </div>
         </div>
     </nav>
     <main>
-      
-       
 
-      </main>
 
-      <div style="position: fixed; bottom: 100px; right: 20px;  display: flex; flex-direction: column; gap: 10px;">
+
+        <div class="container mt-5 bg-alert alert-success">
+            <h2>Minhas Compras</h2>
+
+            <!-- Lista dos produtos no carrinho -->
+            <ul id="lista-carrinho" class="list-group mb-3"></ul>
+
+            <!-- Total -->
+            <div class="container mt-3">
+                <h3>Total: R$ <span id="total">0.00</span></h3>
+            </div>
+        </div>
+        <div class="container mt-4">
+            <a href="index.html" class="btn btn-outline-success">Voltar para a loja</a>
+            <button href="#" class="btn btn-outline-primary" id="finalizar-compra">Finalizar Compra</button>
+            <a href="carrinho.html" class="btn btn-outline-danger" id="limpar-carrinho">Limpar Carrinho</a>
+        </div>
+    </main>
+
+
+    <div style="position: fixed; bottom: 100px; right: 20px;  display: flex; flex-direction: column; gap: 10px;">
         <a href="https://wa.me/5531999999999?text=asfdas" target="_blank">
-            <button class="btn btn-outline-success" style="border: 2px solid #25D366; border-radius: 50%; padding: 10px;">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" style="width: 50px;" alt="Whatsapp">
+            <button class="btn btn-outline-success"
+                style="border: 2px solid #25D366; border-radius: 50%; padding: 10px;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" style="width: 50px;"
+                    alt="Whatsapp">
             </button>
         </a>
         <a href="#" target="_blank">
             <button class="btn btn-outline-dark" style="border: 2px solid ; border-radius: 50%; padding: 10px;">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" style="width: 50px;" alt="Instagram">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" style="width: 50px;"
+                    alt="Instagram">
             </button>
         </a>
-        </div>
-        
+    </div>
+
+
     <footer class="bg-dark text-white text-center py-3 mt-5">
         © 2025 Comércio Local. Todos os direitos reservados.<br>
         Fale conosco: (31) 1234-5678
-        
-        
+
+
     </footer>
 
 
 
-        <!-- jQuery -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 
-        <!-- Popper.js -->
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.0/dist/umd/popper.min.js"></script>
+    <!-- Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.0/dist/umd/popper.min.js"></script>
 
-        <!-- Bootstrap JS -->
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="carrinho.js"></script>
 
 </body>
 

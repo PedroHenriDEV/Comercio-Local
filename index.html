@@ -2,198 +2,217 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css3/estilo.css">
-    <title>Comércio Local</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css3/estilo.css">
+  <title>Comércio Local</title>
 </head>
 
 <body>
-    <header class=" py-2  position-relative" style="background-color:
-    #005f73;">
-        <div class="container d-flex flex-wrap justify-content-between  text-white ">
-            <div>
-                <img src="imagens/nome.png " alt="Bem vindo ao seu comércio local" class="logo-nome img-fluid">
-            </div>
-            <div>
-                <img src="imagens/Imagem_do_WhatsApp_de_2025-05-09_à_s__11.40.20_187ed2ee-removebg-preview.png" class="logo img-fluid animada">
-            </div>
-            <h2
-                style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" class="animada">
-                Sua compra em um <strong><button class="btn btn-dark btn-lg text-white "> &gt;click&lt;</button></strong>
-            </h2>
-        </div>
-    </header>
+  <header class=" py-2  position-relative" style="background-color:
+    #14532D;">
+    <div class="container d-flex flex-wrap justify-content-between  text-white ">
+      <div>
+        <img src="imagens/nome.png " alt="Bem vindo ao seu comércio local" class="logo-nome img-fluid">
+      </div>
+      <div>
+        <img src="imagens/download.png" class="logo img-fluid animada">
+      </div>
+      <h2 class="animada"
+        style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+        Sua compra em um <strong><button class="btn btn-dark btn-lg text-white"> &gt;click&lt;</button></strong>
+      </h2>
+    </div>
+  </header>
 
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f8f9fa;">
-        <a class="navbar-brand" ></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <div class="btn-group" role="group" aria-label="Navbar Buttons"></div>
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link btn btn-outline-info rounded-pill" href="index.html">Página Inicial</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn btn-outline-info rounded-pill" href="carrinho.html">Carrinho</a>
-                </li>
-            </ul>
-        </div>
-        </div>
-    </nav>
-    <main>
-        <div>
-          <h2 class="text-center">Nossos Produtos</h2>
-        </div>
-        <div class="container mt-5 alert alert-primary">
-          <div class="row">
-            <!-- Produto 1 -->
-            <div class="col-md-3 mb-2">
-              <div class="card" style="border: none;">
-                <img src="https://www.produtosanchieta.com.br/wp-content/uploads/2022/05/Achocolatado-em-po-700grs.png" class="card-img-top" alt="Imagem do Produto">
-                <div class="card-body">
-                  <h5 class="card-title">Achocolatado</h5>
-                  <p class="card-text"></p>
-                  <p class="card-text font-weight-bold">R$ 9,99</p>
-                  <a href="carrinho.html" class="btn btn-outline-primary">Adicionar ao Carrinho</a>
-                </div>
-              </div>
-            </div>
-    
-            <!-- Produto 2 -->
-            <div class="col-md-3">
-              <div class="card" style="border: none;">
-                <img src="imagens/65033afe41f0343ae3ef186e.webp" class="card-img-top" alt="Imagem do Produto">
-                <div class="card-body">
-                  <h5 class="card-title">Iorgute Nestle</h5>
-                  <p class="card-text"></p>
-                  <p class="card-text font-weight-bold">R$ 12,72</p>
-                  <a href="carrinho.html" class="btn btn-outline-primary">Adicionar ao Carrinho</a>
-                </div>
-              </div>
-            </div>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f8f9fa;">
+    <a class="navbar-brand"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="btn-group" role="group" aria-label="Navbar Buttons"></div>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link btn btn-outline-success rounded-pill active" href="index.html">Página Inicial</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-outline-success rounded-pill " href="carrinho.html"> Carrinho <span id="contador"
+              style="color: red;">0</span>
+          </a>
+        </li>
+        
 
-            <!-- Produto 2 -->
-            <div class="col-md-3">
-                <div class="card" style="border: none;">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK5uySs-2zPIFFiF4n3-3R9rJis1unkTPbrQ&s" class="card-img-top" alt="Imagem do Produto">
-                  <div class="card-body">
-                    <h5 class="card-title">Extrato de Tomate</h5>
-                    <p class="card-text"></p>
-                    <p class="card-text font-weight-bold">R$ 5,79</p>
-                    <a href="carrinho.html" class="btn btn-outline-primary">Adicionar ao Carrinho</a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Produto 2 -->
-            <div class="col-md-3">
-                <div class="card" style="border: none;">
-                  <img src="https://www.alimentostoscana.com.br/wp-content/uploads/2024/07/Cominho-em-Po-60g.png" class="card-img-top" alt="Imagem do Produto">
-                  <div class="card-body">
-                    <h5 class="card-title">Cominho em Pó</h5>
-                    <p class="card-text"></p>
-                    <p class="card-text font-weight-bold">R$ 15,00</p>
-                    <a href="carrinho.html" class="btn btn-outline-primary">Adicionar ao Carrinho</a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Produto 2 -->
-            <div class="col-md-3">
-                <div class="card" style="border: none;">
-                  <img src="https://www.elsons.com.br/upload/foto/produto_capa_1258_ec8030d6b9a74039afce6cb910da3c06_m.png" class="card-img-top" alt="Imagem do Produto">
-                  <div class="card-body">
-                    <h5 class="card-title">Macarrão</h5>
-                    <p class="card-text"></p>
-                    <p class="card-text font-weight-bold">R$ 4,58</p>
-                    <a href="carrinho.html" class="btn btn-outline-primary">Adicionar ao Carrinho</a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Produto 2 -->
-            <div class="col-md-3">
-                <div class="card" style="border: none;">
-                  <img src="https://www.elsons.com.br/upload/foto/produto_capa_1347_18644ed49b3e6eaf3483f963bd6d3fdc_m.jpg" class="card-img-top" alt="Imagem do Produto">
-                  <div class="card-body">
-                    <h5 class="card-title">Suco</h5>
-                    <p class="card-text"></p>
-                    <p class="card-text font-weight-bold">R$ 10,75</p>
-                    <a href="carrinho.html" class="btn btn-outline-primary">Adicionar ao Carrinho</a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Produto 2 -->
-            <div class="col-md-3">
-                <div class="card" style="border: none;">
-                  <img src="https://images.tcdn.com.br/img/img_prod/764158/maionede_defumada_250g_859_1_20639b98383c7c948dbf5a1dd438166d.png" class="card-img-top" alt="Imagem do Produto">
-                  <div class="card-body">
-                    <h5 class="card-title">Maionese Defumada</h5>
-                    <p class="card-text"></p>
-                    <p class="card-text font-weight-bold">R$ 22,80</p>
-                    <a href="carrinho.html" class="btn btn-outline-primary">Adicionar ao Carrinho</a>
-                  </div>
-                </div>
-              </div>
-
-              
-    
-            <!-- Produto 3 -->
-            <div class="col-md-3">
-              <div class="card" style="border: none;">
-                <img src="https://www.alimentostoscana.com.br/wp-content/uploads/2024/07/Alho-Frito-40g.png" class="card-img-top" alt="Imagem do Produto">
-                <div class="card-body">
-                  <h5 class="card-title">Alho frito</h5>
-                  <p class="card-text"></p>
-                  <p class="card-text font-weight-bold">R$ 10,00</p>
-                  <a href="carrinho.html" class="btn btn-outline-primary">Adicionar ao Carrinho</a>
-                </div>
-              </div>
+      </ul>
+    </div>
+    </div>
+  </nav>
+  <main>
+    <div>
+      <h2 class="text-center">Nossos Produtos</h2>
+    </div>
+    <div class="container mt-5 alert alert-success">
+      <div class="row">
+        <!-- Produto 1 -->
+        <div class="col-md-3 mb-2">
+          <div class="card" style="border: none;">
+            <img src="https://www.produtosanchieta.com.br/wp-content/uploads/2022/05/Achocolatado-em-po-700grs.png"
+              class="card-img-top" alt="Imagem do Produto">
+            <div class="card-body">
+              <h5 class="card-title">Achocolatado</h5>
+              <p class="card-text"></p>
+              <p class="card-text font-weight-bold preco"">R$ 9,99</p>
+                  <button class=" btn btn-outline-success btn-adicionar" id="adcionar">Adicionar ao Carrinho</button>
             </div>
           </div>
         </div>
 
-       
-
-      </main>
-      
-
-      <div style="position: fixed; bottom: 100px; right: 20px;  display: flex; flex-direction: column; gap: 10px;">
-        <a href="https://wa.me/5531999999999?text=asfdas" target="_blank">
-            <button class="btn btn-outline-success" style="border: 2px solid #25D366; border-radius: 50%; padding: 10px;">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" style="width: 50px;" alt="Whatsapp">
-            </button>
-        </a>
-        <a href="#" target="_blank">
-            <button class="btn btn-outline-dark" style="border: 2px solid ; border-radius: 50%; padding: 10px;">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" style="width: 50px;" alt="Instagram">
-            </button>
-        </a>
+        <!-- Produto 2 -->
+        <div class="col-md-3">
+          <div class="card" style="border: none;">
+            <img src="imagens/65033afe41f0343ae3ef186e.webp" class="card-img-top" alt="Imagem do Produto">
+            <div class="card-body">
+              <h5 class="card-title">Iorgute Nestle</h5>
+              <p class="card-text"></p>
+              <p class="card-text font-weight-bold preco"">R$ 12,72</p>
+                  <button class=" btn btn-outline-success btn-adicionar" id="adcionar">Adicionar ao Carrinho</button>
+            </div>
+          </div>
         </div>
-        
-    <footer class="bg-dark text-white text-center py-3 mt-5">
-        © 2025 Comércio Local. Todos os direitos reservados.<br>
-        Fale conosco: (31) 1234-5678
-        
-        
-    </footer>
+
+        <!-- Produto 2 -->
+        <div class="col-md-3">
+          <div class="card" style="border: none;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK5uySs-2zPIFFiF4n3-3R9rJis1unkTPbrQ&s"
+              class="card-img-top" alt="Imagem do Produto">
+            <div class="card-body">
+              <h5 class="card-title">Extrato de Tomate</h5>
+              <p class="card-text"></p>
+              <p class="card-text font-weight-bold preco"">R$ 5,79</p>
+                    <button class=" btn btn-outline-success btn-adicionar" id="adcionar">Adicionar ao Carrinho</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="col-md-3">
+          <div class="card" style="border: none;">
+            <img src="https://www.alimentostoscana.com.br/wp-content/uploads/2024/07/Cominho-em-Po-60g.png"
+              class="card-img-top" alt="Imagem do Produto">
+            <div class="card-body">
+              <h5 class="card-title">Cominho em Pó</h5>
+              <p class="card-text"></p>
+              <p class="card-text font-weight-bold preco"">R$ 15,00</p>
+                    <button class=" btn btn-outline-success btn-adicionar" id="adcionar">Adicionar ao Carrinho</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="col-md-3">
+          <div class="card" style="border: none;">
+            <img src="https://www.elsons.com.br/upload/foto/produto_capa_1258_ec8030d6b9a74039afce6cb910da3c06_m.png"
+              class="card-img-top" alt="Imagem do Produto">
+            <div class="card-body">
+              <h5 class="card-title">Macarrão</h5>
+              <p class="card-text"></p>
+              <p class="card-text font-weight-bold preco"">R$ 4,58</p>
+                    <button class=" btn btn-outline-success btn-adicionar" id="adcionar">Adicionar ao Carrinho</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="col-md-3">
+          <div class="card" style="border: none;">
+            <img src="https://www.elsons.com.br/upload/foto/produto_capa_1347_18644ed49b3e6eaf3483f963bd6d3fdc_m.jpg"
+              class="card-img-top" alt="Imagem do Produto">
+            <div class="card-body">
+              <h5 class="card-title">Suco</h5>
+              <p class="card-text"></p>
+              <p class="card-text font-weight-bold preco"">R$ 10,75</p>
+                    <button class=" btn btn-outline-success btn-adicionar" id="adcionar">Adicionar ao Carrinho</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="col-md-3">
+          <div class="card" style="border: none;">
+            <img
+              src="https://images.tcdn.com.br/img/img_prod/764158/maionede_defumada_250g_859_1_20639b98383c7c948dbf5a1dd438166d.png"
+              class="card-img-top" alt="Imagem do Produto">
+            <div class="card-body">
+              <h5 class="card-title">Maionese Defumada</h5>
+              <p class="card-text"></p>
+              <p class="card-text font-weight-bold preco"">R$ 22,80</p>
+                    <button class=" btn btn-outline-success btn-adicionar" id="adcionar">Adicionar ao Carrinho</button>
+            </div>
+          </div>
+        </div>
 
 
 
-        <!-- jQuery -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <!-- Produto 3 -->
+        <div class="col-md-3">
+          <div class="card" style="border: none;">
+            <img src="https://www.alimentostoscana.com.br/wp-content/uploads/2024/07/Alho-Frito-40g.png"
+              class="card-img-top" alt="Imagem do Produto">
+            <div class="card-body">
+              <h5 class="card-title">Alho frito</h5>
+              <p class="card-text"></p>
+              <p class="card-text font-weight-bold preco"">R$ 10,00</p>
+                  <button class=" btn btn-outline-success btn-adicionar" id="adcionar">Adicionar ao Carrinho</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
 
-        <!-- Popper.js -->
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.0/dist/umd/popper.min.js"></script>
 
-        <!-- Bootstrap JS -->
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+  </main>
+
+
+  <div style="position: fixed; bottom: 100px; right: 20px;  display: flex; flex-direction: column; gap: 10px;">
+    <a href="https://wa.me/5531999999999?text=asfdas" target="_blank">
+      <button class="btn btn-outline-success" style="border: 2px solid #25D366; border-radius: 50%; padding: 10px;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" style="width: 50px;" alt="Whatsapp">
+      </button>
+    </a>
+    <a href="#" target="_blank">
+      <button class="btn btn-outline-dark" style="border: 2px solid ; border-radius: 50%; padding: 10px;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" style="width: 50px;"
+          alt="Instagram">
+      </button>
+    </a>
+  </div>
+
+
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    © 2025 Comércio Local. Todos os direitos reservados.<br>
+    Fale conosco: (31) 1234-5678
+
+
+  </footer>
+
+
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+  <!-- Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.0/dist/umd/popper.min.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="index.js"></script>
 
 </body>
 
