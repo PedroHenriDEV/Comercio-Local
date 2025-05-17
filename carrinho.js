@@ -25,12 +25,15 @@ function atualizarCarrinho() {
         const botaoRemover = document.createElement('button');
         botaoRemover.textContent = 'Remover';
 
+        li.innerHTML = `<strong>${produto.nome} - ${produto.preco}</strong> `;
+
+
         // Estilo via JS
     botaoRemover.style.backgroundColor = 'red';
     botaoRemover.style.color = 'white';
     botaoRemover.style.border = 'none';
     botaoRemover.style.borderRadius = '5px';
-    botaoRemover.style.padding = '5px 25px';
+    botaoRemover.style.padding = '0px 10px';
     botaoRemover.style.cursor = 'pointer';
     botaoRemover.style.marginLeft = '10px';
 
@@ -52,7 +55,7 @@ function atualizarCarrinho() {
     });
 
     // Atualiza o total
-    totalSpan.textContent = `Total: ${totalValor.toFixed(2).replace('.', ',')}`;
+    totalSpan.textContent = ` ${totalValor.toFixed(2).replace('.', ',')}`;
     totalSpan.style.color = 'black'; 
     totalSpan.style.fontSize = '20px';
     totalSpan.style.fontWeight = 'bold';
@@ -109,20 +112,45 @@ document.getElementById('finalizar-compra').addEventListener('click', (e) => {
     mensagem += `\nEndereço: ${endereço}`;
 
     const telefone = prompt('Digite seu telefone:');
-    if (!telefone) {
+    if (!telefone || !/^\d+$/.test(telefone)) {
         alert('Telefone não pode ser vazio!');
         return;
     } 
     
-    mensagem += `\nTelefone: ${telefone}`;
+    mensagem += `\n Telefone: ${telefone}`;
+
+
 
     //mensagem codificada com dados do comprador
     const numeroWhatsapp = '5531999999999'; // Substitua pelo número de WhatsApp desejado
-    const mensagemCodificada = encodeURIComponent(mensagem);
-    const url = `https://api.whatsapp.com/send?phone=${numeroWhatsapp}&text=${mensagemCodificada}`;
 
+    const mensagemCodificada = encodeURIComponent(mensagem).replace(/%0A/g, '%0D%0A'); // Codifica a mensagem para o WhatsApp
+    const url = `https://wa.me/${numeroWhatsapp}?text=${mensagemCodificada}`;
     // Abre o WhatsApp com a mensagem
     window.open(url, '_blank');
-    // Limpa o carrinho
+
+    //limpa o carrinho no localStorage
+    localStorage.removeItem('carrinho');
+
+     // Limpa o carrinho
     carrinho = [];
+    // Atualiza o contador de itens no carrinho
+    contador.textContent = 0;
+
+    
+        alert('Compra finalizada com sucesso!');
+        window.location.href = 'index.html'; // Redireciona para a página inicial
+        
+
+        //limppar carrinho
+    
+   
+});
+    // Limpa o carrinho
+    document.getElementById('limpar-carrinho').addEventListener('click', function (e) {
+    e.preventDefault();
+    carrinho = [];
+    localStorage.removeItem('carrinho');
+    atualizarCarrinho();
+    contador.textContent = 0;
 });

@@ -3,6 +3,19 @@
     padding: 0;
 }
 
+.container {
+    display: flex;
+    justify-content: flex-start; /* Espaça os itens à esquerda e à direita */
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+body {
+  font-family: poppins, sans-serif, tahoma, sagoe ui;
+  background-color: #f9fafb;
+  color: #1f2937;
+  
+}
+
 @media (max-width: 768px) {
     h2 {
       font-size: 1.2rem; /* Tamanho menor para telas pequenas */
@@ -13,18 +26,97 @@
       padding: 0.4rem 0.8rem;
     }
   }
-
+ 
+  /* Header  */
 header {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 2em;
     font-weight: bold;
+    padding: 1rem 0;
+}
+
+header h2 {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+/* Navbar  */
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0 0 0 /  0.1);
+}
+
+.nav-link.btn {
+  display: inline-flex;
+  align-items: center; /* alinha verticalmente */
+  min-width: 130px; /* define largura mínima fixa, ajuste conforme quiser */
+  justify-content: center; /* centraliza conteúdo */
 }
 
 
-.container {
-    display: flex;
-    justify-content: flex-start; /* Espaça os itens à esquerda e à direita */
-    align-items: center; /* Alinha os itens verticalmente */
+.nav-link.btn:hover {
+    background-color: #14532d;
+    color: white !important;
+}
+
+/* cards  */
+.card {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* Botão adicionar */
+.btn-adicionar {
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+
+.btn-adicionar:hover {
+    background-color: #14532d;
+    color: #fff;
+}
+
+
+/* Lista carrinho */
+#lista-carrinho li {
+    font-weight: 600;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#total {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #14532d;
+    margin-top: 1rem;
+}
+
+/* Botões principais */
+.btn-outline-success, .btn-outline-danger, .btn-outline-primary {
+    border-radius: 50px;
+    padding: 0.5rem 2rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+btn-outline-success:hover {
+    background-color: #14532d;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    background-color: #14532d;
+    color: white;
+    font-weight: 600;
+    padding: 1rem 0;
+    margin-top: 2rem;
 }
 
 .logo {
@@ -67,12 +159,7 @@ main {
       }
     }
     
-.nav-link.btn {
-  display: inline-flex;
-  align-items: center; /* alinha verticalmente */
-  min-width: 130px; /* define largura mínima fixa, ajuste conforme quiser */
-  justify-content: center; /* centraliza conteúdo */
-}
+
 
 #contador {
   margin-left: 8px; /* espaço entre texto e número */
